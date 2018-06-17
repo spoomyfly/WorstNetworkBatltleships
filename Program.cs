@@ -507,7 +507,7 @@ namespace bt2
         public static void GetEnemyShoot()
         { }
 
-        public static void StartShooting( Connection.SocketClient socketClient)
+        public static void StartShooting(Connection.SocketClient socketClient)
         {
             do
             {
@@ -637,25 +637,28 @@ namespace bt2
             switch (a)
             {
                 case '0':
-                    Console.WriteLine("Please write IP of device u want to connect formatted like : 127.0.0.1");
-                    IPAddress ServerIP;
-                    IPAddress.TryParse(Console.ReadLine(), out ServerIP);
-                    Console.WriteLine("Please write port of server device");
-                    int port;
-                    Int32.TryParse(Console.ReadLine(), out port);
-                    Connection.SocketClient socketClient = new Connection.SocketClient(ServerIP, port);
-                    // Connection.SocketServer socketServer = new Connection.SocketServer(IPAddress.Parse("127.0.0.1"), 11000);
-                    StartShooting(socketClient);
+                    {
+                        Console.WriteLine("Please write IP of device u want to connect formatted like : 127.0.0.1");
+                        IPAddress ServerIP;
+                        IPAddress.TryParse(Console.ReadLine(), out ServerIP);
+                        Console.WriteLine("Please write port of server device");
+                        int port;
+                        Int32.TryParse(Console.ReadLine(), out port);
+                        Connection.SocketClient socketClient = new Connection.SocketClient(ServerIP, port);
+                        // Connection.SocketServer socketServer = new Connection.SocketServer(IPAddress.Parse("127.0.0.1"), 11000);
+                        StartShooting(socketClient);
+                    }
                     break;
                 case '1':
-                    Console.WriteLine("Please write IP your computer formatted like : 127.0.0.1");
-                    IPAddress ServerIP;
-                    IPAddress.TryParse(Console.ReadLine(), out ServerIP);
-                    Console.WriteLine("Please write port of server device");
-                    int port;
-                    Int32.TryParse(Console.ReadLine(), out port);
-                    Connection.SocketServer socketServer = new Connection.SocketServer(ServerIP, port);
-
+                    {
+                        Console.WriteLine("Please write IP your computer formatted like : 127.0.0.1");
+                        IPAddress ServerIP;
+                        IPAddress.TryParse(Console.ReadLine(), out ServerIP);
+                        Console.WriteLine("Please write port of server device");
+                        int port;
+                        Int32.TryParse(Console.ReadLine(), out port);
+                        Connection.SocketServer socketServer = new Connection.SocketServer(ServerIP, port);
+                    }
                     break;
                 default:
                     StartGame(Myships);
