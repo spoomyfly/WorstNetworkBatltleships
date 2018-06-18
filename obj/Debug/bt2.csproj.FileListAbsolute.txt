@@ -105,3 +105,10 @@ D:\battleship\bt2\bin\Debug\Connection.dll
 D:\battleship\bt2\bin\Debug\Connection.pdb
 D:\battleship\bt2\obj\Debug\bt2.exe.config
 D:\battleship\bt2\obj\Debug\bt2.csproj.CopyComplete
+D:\battleship\Systemy_rosproszone\WorstNetworkBatltleships\bin\Debug\bt2.exe.config
+D:\battleship\Systemy_rosproszone\WorstNetworkBatltleships\bin\Debug\bt2.exe
+D:\battleship\Systemy_rosproszone\WorstNetworkBatltleships\bin\Debug\bt2.pdb
+D:\battleship\Systemy_rosproszone\WorstNetworkBatltleships\obj\Debug\bt2.csprojResolveAssemblyReference.cache
+D:\battleship\Systemy_rosproszone\WorstNetworkBatltleships\obj\Debug\bt2.csproj.CoreCompileInputs.cache
+D:\battleship\Systemy_rosproszone\WorstNetworkBatltleships\obj\Debug\bt2.exe
+D:\battleship\Systemy_rosproszone\WorstNetworkBatltleships\obj\Debug\bt2.pdb

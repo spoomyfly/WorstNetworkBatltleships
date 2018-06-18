@@ -668,6 +668,23 @@ namespace bt2
             Environment.Exit(0);
         }
 
+        public static string GetLocalIPAddress()
+        {
+            if (System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable())
+            {
+
+                var host = Dns.GetHostEntry(Dns.GetHostName());
+                foreach (var ip in host.AddressList)
+                {
+                    if (ip.AddressFamily == AddressFamily.InterNetwork)
+                    {
+                        return ip.ToString();
+                    }
+                }
+            }
+            return null;
+        }
+
         static void Main(string[] args)
         {
             StartGame();
